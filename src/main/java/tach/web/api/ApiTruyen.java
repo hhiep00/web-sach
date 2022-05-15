@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import tach.web.model.TheLoaiSach;
 import tach.web.model.User;
 
 /**
@@ -37,9 +38,9 @@ public class ApiTruyen extends  HttpServlet{
                 BufferedReader reader = req.getReader();
                  getRequestBody request=new getRequestBody();
                  String jsonString=request.getBody(reader);
-                 User  user=new Gson().fromJson(jsonString,User.class);
-                 System.out.println(user);
-                o.print(user);
+                 TheLoaiSach  theLoaiSach=new Gson().fromJson(jsonString,TheLoaiSach.class);
+                 System.out.println(jsonString);
+                o.print(jsonString);
 
             } catch(Exception e) {
             }
