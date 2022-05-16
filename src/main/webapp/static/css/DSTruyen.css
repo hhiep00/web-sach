@@ -1,0 +1,16 @@
+
+/* Danh sách truyện */
+.tim-kiem > input, .tim-kiem > button{
+    min-height: 30px; 
+}
+.bang-sua-truyen{
+    min-width: 600px;
+    float:left;
+    margin-top: 30px;        
+
+}
+.bang-truyen, td, th{
+    border: 1px solid #ccc;
+    border-bottom: 3px solid #ccc ;
+    border-collapse: collapse;
+}

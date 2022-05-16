@@ -1,0 +1,70 @@
+.admin-page{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1300px;
+    margin-left: 100px;
+    
+}
+
+.menu{
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 10%;
+    align-items: center;
+    min-height: 1000px;
+    float: left;
+}
+
+.menu >p{
+    text-transform: uppercase;
+}
+.danh-sach > li > a{
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-decoration: none;
+    color: black;
+
+}
+.danh-sach {
+    padding-left: 0px;
+}
+.danh-sach > li{
+    display: block;
+    list-style-type: none;
+    margin: 5px 0px;
+    background-color: rgb(248, 245, 245);
+}
+
+.admin-header{
+    position: relative;
+    height: 50px;
+    background-color: #ccc;
+}
+.tieu-de{
+    position: absolute;
+    display: block;
+    left: 3%;
+}
+.thao-tac{
+    position:absolute;
+    right: 5%;
+    margin: 0px;
+}
+.thao-tac>li>a{
+    display: block;
+    text-decoration: none;
+}
+.thao-tac>li{
+    display: block;
+    list-style: none;
+    height: 20px;
+    background-color: yellow;
+    border: 5px;
+    margin-top: 5px;
+}
+
+.content{
+    margin-left: 40px;
+    width: 70%;
+}

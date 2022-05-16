@@ -27,7 +27,7 @@
     </div>
     
         <div class="truycap">
-            <a  id="dt" class="nut-dang-nhap">Đăng Nhập</a>
+            <a href="Dang_Nhap.html" class="nut-dang-nhap">Đăng Nhập</a>
             <a href="Dang_Ky.html" class="nut-dang-ki">Đăng kí</a>
         </div>
     </section>
@@ -87,12 +87,13 @@
                </div>
                 </div>
             </div>
-
+            <div class="ten-lua-chon"><a href="">Con Gái</a></div>
+            <div class="ten-lua-chon"><a href="">Con Trai</a></div>
             <div class="ten-lua-chon"> <a href="">Tìm truyện</a></div>
             <div class="ten-lua-chon"><a href="">Lịch sử</a></div>
             <div class="ten-lua-chon" > <a href="">Theo dõi</a> </div>
-
-
+            <div class="ten-lua-chon" > <a href="">Thảo luận</a></div>
+            <div class="ten-lua-chon"> <a href="">Fanpage</a></div>
         </div>
         </nav>
 
@@ -308,26 +309,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="static/js/index.js"></script>
-    <script>
-        $("#dt").click(function(){
-         let data={};
-          data['ID_Sach']=1;
-         data['ID_TheLoai']=1;
-        $.ajax({
-           
-            type:"POST",
-            url:"http://localhost:8080/WebSach/api/user/1",
-            contentType:"application/json",
-            dataType:"json",
-            data:JSON.stringify(data),
-            success : function(data){
-                console.log(data);
-                
-            }
-            
-    })
-    })
-    </script>
     
 </body>
 </html>

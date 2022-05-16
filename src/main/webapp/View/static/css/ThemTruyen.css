@@ -1,0 +1,103 @@
+.gioi-thieu{
+    display: flex;
+    flex-direction: row;
+}
+.chon_the_loai{
+    max-width: 500px;
+    display: flex;
+    margin: 0;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.the_loai{
+    position: relative;
+
+}
+.the_loai .chon_the_loai input{
+    /* width: 100%; */
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    outline: none;
+    border: none;
+    display: inline-block;
+    flex: 1 0 auto;
+   
+}
+.the_loai .chon_the_loai span{
+    padding: 0 2rem;
+    border-radius: 10px;
+    background-color: #ccc;
+    margin-left: 0.2rem;
+}
+.chon_the_loai{
+    border: 1px solid black;
+}
+.ten-truyen{
+    display: flex;
+    flex-direction: column;
+}
+.tac-gia{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.tac-gia > input, .ten-truyen>input{
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+.mo-ta{
+    display: flex;
+    flex-direction: column;
+}
+.mo-ta>textarea{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+.lua_chon{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    background: #ccc;
+    width: 100%;
+    margin: 0;
+    display: none;
+}
+.lua_chon.active{
+    display: block;
+}
+.lua_chon ul{
+    list-style: none;
+    padding: 0;
+    /* padding-left: 1rem; */
+ 
+}
+.lua_chon ul li{
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.lua_chon ul li:hover{
+    background: #f8f8f8;
+}
+
+.tinh-trang{
+    margin-top: 20px;
+}
+
