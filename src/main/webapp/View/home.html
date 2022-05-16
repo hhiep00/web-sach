@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/body.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/body.css">
+    <link rel="stylesheet" href="static/css/footer.css">
     <title>Document</title>
 </head>
 
@@ -27,7 +27,7 @@
     </div>
     
         <div class="truycap">
-            <a href="Dang_Nhap.html" class="nut-dang-nhap">Đăng Nhập</a>
+            <a  id="dt" class="nut-dang-nhap">Đăng Nhập</a>
             <a href="Dang_Ky.html" class="nut-dang-ki">Đăng kí</a>
         </div>
     </section>
@@ -307,7 +307,27 @@
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="static/js/index.js"></script>
+    <script>
+        $("#dt").click(function(){
+         let data={};
+          data['ID_Sach']=1;
+         data['ID_TheLoai']=1;
+        $.ajax({
+           
+            type:"POST",
+            url:"http://localhost:8080/WebSach/api/user/1",
+            contentType:"application/json",
+            dataType:"json",
+            data:JSON.stringify(data),
+            success : function(data){
+                console.log(data);
+                
+            }
+            
+    })
+    })
+    </script>
     
 </body>
 </html>

@@ -4,7 +4,11 @@
  */
 package tach.web.dao;
 
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.List;
 import tach.web.connect.ConnectDatabase;
+import tach.web.model.Sach;
 
 /**
  *
@@ -12,6 +16,6 @@ import tach.web.connect.ConnectDatabase;
  */
 
 public class TruyenDao extends ConnectDatabase{
-    
+
 
 }

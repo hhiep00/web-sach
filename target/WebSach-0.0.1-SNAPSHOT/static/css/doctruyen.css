@@ -1,0 +1,356 @@
+:root{
+    --mau-chu: #424242;
+
+}
+
+.phan-than-trang{
+    background-color: #333;
+    overflow: auto;
+    border-bottom: 5px solid #f18121;
+    padding: 24px 0;
+}
+
+.noi-dung-than-trang{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Thanh chuyển chương */
+.thanh-chuyen-chuong{
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.tap-lien-ket{
+    padding: 12px 0;
+}
+
+.tap-lien-ket li{
+    display: inline-block;
+}
+
+.lien-ket{
+    color: var(--mau-chu);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.tap-lien-ket li:not(:last-child)::after{
+    content: "/";
+    padding: 0 8px;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.tieu-de-truyen{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--mau-chu);
+    padding: 8px 0;
+}
+
+.ten-truyen{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--mau-chu);
+}
+
+.chuong-truyen{
+
+}
+
+.cap-nhat{
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.thoi-gian-cap-nhat{
+
+}
+
+.huong-dan-phim-tat{
+    color: #31708f;
+    background-color: #d9edf7;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 16px 0;
+    margin: 32px 0;
+}
+
+.thong-tin-phim-tat{
+    font-style: italic;
+    text-transform: none;
+}
+
+.nut-chuyen-trang{
+    text-align: center;
+    margin: 16px 0 12px;
+}
+
+.nut{
+    background-color: #5bc0de;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-right: 8px;
+}
+
+.nut span{
+    font-weight: 300;
+    text-transform: none;
+}
+
+.nut:hover{
+    color: #f18121;
+}
+
+/* Nội dung truyện */
+.noi-dung-chuyen{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.noi-dung-chuyen img{
+    max-width: 720px;
+}
+
+/* Bình luận */
+.khung-binh-luan{
+    background-color: white;
+    margin: 24px 0;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.tieu-de{
+    color: #f18121;
+    font-size: 2.0rem;
+    text-transform: none;
+}
+
+.tong-binh-luan{
+
+}
+
+.nhap-binh-luan{
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 1.4rem;
+    text-transform: none;
+    color: #999;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    resize: none;
+    margin: 16px 0;
+}
+
+.binh-luan{
+    display: flex;
+    padding: 0 8px;
+    margin-bottom: 20px;
+}
+
+.anh-dai-dien{
+    padding: 0 8px;
+}
+
+.anh-dai-dien img{
+    width: 48px;
+    border-radius: 50%;
+}
+
+.tai-khoan-binh-luan{
+    flex: 1;
+    padding: 0 16px;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+
+.tai-khoan{
+    text-transform: none;
+    font-size: 1.4rem;
+    color: #2196f3;
+    font-weight: 600;
+    padding: 8px 0;
+    border-bottom: 1px solid #f18121;
+}
+
+.noi-dung-binh-luan{
+    margin: 8px 0;
+    font-size: 1.5rem;
+    text-transform: none;
+}
+
+.thanh-tuong-tac{
+    color: #3f94d5;
+    font-size: 1.3rem;
+    padding: 8px 0;
+    display: flex;
+    gap: 24px;
+}
+
+.thich{
+
+}
+
+.luong-like{
+
+}
+
+.tra-loi{
+    text-transform: none;
+}
+
+.thoi-gian-dang{
+    color: #999;
+    text-transform: none;
+}
+
+.thanh-phan-trang{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 16px 0 24px;
+}
+
+.so-trang{
+    line-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #e2e2e2;
+    font-size: 1.6rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 6px;
+    color: #4a4a4a;
+}
+
+.so-trang.duoc-chon{
+    background-color: #f18121;
+    color: white;
+}
+
+/* Thanh điều hướng */
+.thanh-dieu-huong{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #242526;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.nut-home{
+    font-size: 2.4rem;
+    color: white;
+    margin-right: 8px;
+}
+
+.nut-home:hover{
+    color: #f18121;
+}
+
+.nut-trai-phai{
+    font-size: 2.4rem;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+.danh-sach-chuong{
+    line-height: 35px;
+    font-size: 1.4rem;
+    width: 200px;
+    height: 35px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.chuong{
+
+}
+
+.theo-doi{
+    margin-left: 8px;
+}
+
+.nut-theo-doi, .bo-theo-doi{
+    font-size: 1.6rem;
+    background-color: #c0c0c0;
+    text-transform: none;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.nut-theo-doi{
+    display: block;
+}
+
+.bo-theo-doi{
+    display: none;
+}
+
+.nut-ve-dau-trang{
+    position: fixed;
+    bottom: 52px;
+    right: 12px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    color: #f18121;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+/* Reponsive */
+@media(max-width:1200px){
+    .phan-than-trang{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+
+}
+@media (max-width:1050px) {
+    
+    .noi-dung-chuyen img{
+        width: 100%;
+    }
+}
+@media (max-width:900px) {
+    .phan-than-trang{
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+
+    .danh-sach-chuong{
+        width: 132px;
+    }
+}
+
+@media(max-width:450px){
+    .theo-doi span{
+        display: none;
+    }
+
+    .nut-theo-doi, .bo-theo-doi{
+        padding: 8px 10px;
+    }
+}

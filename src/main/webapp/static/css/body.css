@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;   
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    transition: all .3s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.noi-dung{
+    width: 100%;
+    margin-top: 2rem;
+}
+.noi-dung .can-giua{
+    text-align: center;
+}
+.noi-dung .can-giua  .noi-dung-chinh{
+    padding: 0 10%;
+    width: 100%;
+}
+.noi-dung .can-giua  .noi-dung-chinh .mo-dau{
+    text-align: center;
+    width: 100%;
+}
+.noi-dung .can-giua .noi-dung-chinh .mo-dau .gioi-thieu{
+    display: flex;
+    /* justify-content: center; */
+    width: 100%;
+    gap: 0.5rem;
+
+}
+.noi-dung .can-giua .noi-dung-chinh .mo-dau .gioi-thieu .gioi-thieu1{
+    flex: 1 1;
+}
+.noi-dung .can-giua .noi-dung-chinh .mo-dau .gioi-thieu .gioi-thieu2{
+    flex: 2 1;
+}
+
+ .tile .nhan_truyen{
+    width: 100%;
+    position: relative;
+   
+}
+.tile .nhan_truyen img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+ .tile .nhan_truyen .captions{
+    position: absolute;
+    left: 7%;
+    bottom: 5%;
+    color: orange;
+}
+.tile .nhan_truyen .captions h3{
+    font-size: 1.7rem;
+}
+.tile .nhan_truyen .chapter{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: black;
+    font-size: 1.2rem;
+    background-color: rgb(209, 177, 34);
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+.gioi-thieu .gioi-thieu2 .tile .nhan_truyen{
+    overflow: hidden;
+}
+.gioi-thieu .gioi-thieu2 .tile .nhan_truyen img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.gioi-thieu .gioi-thieu2 .tile .nhan_truyen h4{
+    margin-top: 10rem;
+
+    position: absolute;
+ 
+   
+}
+.gioi-thieu .gioi-thieu2 .tile .nhan_truyen .bottom-shadow{
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -150%;
+    left: 0;
+ 
+}
+
+.gioi-thieu .gioi-thieu2 .tile .nhan_truyen:hover .chapter{
+    top: 40%;
+    transition: 0.5s;
+    
+}
+.gioi-thieu .gioi-thieu2 .tile .nhan_truyen:hover .captions h4{
+    bottom: -300%;
+    transition: 0.5s;  
+}
+.gioi-thieu .gioi-thieu2 .tile .nhan_truyen:hover .captions{
+    bottom: 63%;
+    transition: 0.5s;  
+}
+.gioi-thieu .gioi-thieu2 .tile .nhan_truyen:hover .bottom-shadow{
+    top: 0;
+    transition: 0.5s;  
+}
+
+
+/* show sach */
+.show-sach .danh-sach-sach .chua-sach{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.show-sach h2{
+    text-align: start;
+    margin: 2rem 0;
+}
+.show-sach .danh-sach-sach .chua-sach li a img{
+    object-fit: cover;
+    border-radius: 5px;
+    width: 95%;
+}
+.ten_sach{
+    margin-top: 1.5rem;
+}
+.ten_sach h3 a{
+    color: #000;
+
+    font-size: 1.5rem;
+}
+.trang_cuoi{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.trang_cuoi a{
+    color: #000;
+    font-size: 1.5rem;
+}
+.load-truyen{
+    margin-top: 2rem;
+   
+}
+.xem-them-truyen{
+    background-color: orange;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media(max-width:1200px){
+    .noi-dung .can-giua  .noi-dung-chinh{
+        padding: 0 1rem;
+
+    }
+
+}
+@media (max-width:1050px) {
+    .show-sach .danh-sach-sach .chua-sach{
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+}
+@media (max-width:900px) {
+    .xem-them-truyen{
+        padding: 0.7rem 1rem;
+    }
+}
+
+@media(max-width:450px){
+    .noi-dung .can-giua  .noi-dung-chinh{
+        padding: 0 1rem;
+
+    }
+    .show-sach .danh-sach-sach .chua-sach{
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+}

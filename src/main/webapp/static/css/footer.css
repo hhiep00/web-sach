@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;   
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    transition: all .3s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.footer{
+    margin: 2rem 0 0 0;
+    background-color: white;
+    padding: 2rem 0;
+}
+.footer .can-giua{
+    display: flex;
+    padding: 0 10%;
+    gap: 2rem;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.footer .can-giua .trai{
+    flex: 1 1 15rem;
+    text-align: left;
+}
+.footer .can-giua .phai{
+    flex: 1 1 30rem;
+    text-align: center;
+}
+ .footer .can-giua .phai ul{
+    padding: 0 6rem;
+    word-break: break-all;
+} 
+.footer .can-giua .phai ul li{
+    display: inline-block;
+    margin: 1rem 1rem 1rem 0;
+}
+.footer .can-giua .phai p{
+   font-size: 1.2srem;
+}
+.footer .can-giua .phai ul li a{
+    font-size: 1.3rem;
+    background-color:rgb(201, 209, 209);
+    color: black;
+    padding: 0.5rem 0.5rem;
+} 
+
+@media (max-width:750px){
+    .footer .can-giua .phai ul{
+        text-align: left;
+        padding: 0;
+    } 
+    .footer .can-giua .phai{
+        flex: 1 1 30rem;
+        text-align: left;
+    }
+}

@@ -23,7 +23,7 @@ public class ConnectDatabase{
     
     public ConnectDatabase()  {
        try {
-        String databaseName="WebTruyen";
+        String databaseName="WebDocSach";
         String user="sa";
         String password="hunterboy95";
         String port="1433";
