@@ -11,6 +11,7 @@ package tach.web.model;
 public class Sach {
     private int ID_Sach;
     private String TenSach;
+    private String tenKhongDau;
     private String Mota;
     private String TacGia;
     private int SoTrang;
@@ -20,75 +21,90 @@ public class Sach {
     public Sach() {
     }
 
-    public Sach(int ID_Sach, String TenSach, String Mota, String TacGia, int SoTrang, String NgayDang, String img) {
-        this.ID_Sach = ID_Sach;
-        this.TenSach = TenSach;
-        this.Mota = Mota;
-        this.TacGia = TacGia;
-        this.SoTrang = SoTrang;
-        this.NgayDang = NgayDang;
-        this.img = img;
-    }
+	public Sach(int iD_Sach, String tenSach, String tenKhongDau, String mota, String tacGia, int soTrang,
+			String ngayDang, String img) {
+		super();
+		ID_Sach = iD_Sach;
+		TenSach = tenSach;
+		this.tenKhongDau = tenKhongDau;
+		Mota = mota;
+		TacGia = tacGia;
+		SoTrang = soTrang;
+		NgayDang = ngayDang;
+		this.img = img;
+	}
 
-    public int getID_Sach() {
-        return ID_Sach;
-    }
+	public int getID_Sach() {
+		return ID_Sach;
+	}
 
-    public void setID_Sach(int ID_Sach) {
-        this.ID_Sach = ID_Sach;
-    }
+	public void setID_Sach(int iD_Sach) {
+		ID_Sach = iD_Sach;
+	}
 
-    public String getTenSach() {
-        return TenSach;
-    }
+	public String getTenSach() {
+		return TenSach;
+	}
 
-    public void setTenSach(String TenSach) {
-        this.TenSach = TenSach;
-    }
+	public void setTenSach(String tenSach) {
+		TenSach = tenSach;
+	}
 
-    public String getMota() {
-        return Mota;
-    }
+	public String getTenKhongDau() {
+		return tenKhongDau;
+	}
 
-    public void setMota(String Mota) {
-        this.Mota = Mota;
-    }
+	public void setTenKhongDauString(String tenKhongDauString) {
+		this.tenKhongDau = tenKhongDau;
+	}
 
-    public String getTacGia() {
-        return TacGia;
-    }
+	public String getMota() {
+		return Mota;
+	}
 
-    public void setTacGia(String TacGia) {
-        this.TacGia = TacGia;
-    }
+	public void setMota(String mota) {
+		Mota = mota;
+	}
 
-    public int getSoTrang() {
-        return SoTrang;
-    }
+	public String getTacGia() {
+		return TacGia;
+	}
 
-    public void setSoTrang(int SoTrang) {
-        this.SoTrang = SoTrang;
-    }
+	public void setTacGia(String tacGia) {
+		TacGia = tacGia;
+	}
 
-    public String getNgayDang() {
-        return NgayDang;
-    }
+	public int getSoTrang() {
+		return SoTrang;
+	}
 
-    public void setNgayDang(String NgayDang) {
-        this.NgayDang = NgayDang;
-    }
+	public void setSoTrang(int soTrang) {
+		SoTrang = soTrang;
+	}
 
-    public String getImg() {
-        return img;
-    }
+	public String getNgayDang() {
+		return NgayDang;
+	}
 
-    public void setImg(String img) {
-        this.img = img;
-    }
+	public void setNgayDang(String ngayDang) {
+		NgayDang = ngayDang;
+	}
 
-    @Override
-    public String toString() {
-        return "Sach{" + "ID_Sach=" + ID_Sach + ", TenSach=" + TenSach + ", Mota=" + Mota + ", TacGia=" + TacGia + ", SoTrang=" + SoTrang + ", NgayDang=" + NgayDang + ", img=" + img + '}';
-    }
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
+	}
+
+	@Override
+	public String toString() {
+		return "Sach [ID_Sach=" + ID_Sach + ", TenSach=" + TenSach + ", tenKhongDau=" + tenKhongDau
+				+ ", Mota=" + Mota + ", TacGia=" + TacGia + ", SoTrang=" + SoTrang + ", NgayDang=" + NgayDang + ", img="
+				+ img + "]";
+	}
+
+    
     
 }

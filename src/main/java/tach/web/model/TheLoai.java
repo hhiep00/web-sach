@@ -1,36 +1,34 @@
 package tach.web.model;
 
 public class TheLoai {
-    private String ID_Theloai;
-    private String TenTheLoai;
+	private String ID_TheLoai;
+	private String TenTheLoai;
+	
+//	public TheLoai(String id_TheLoai, String tenTheLoai) {
+//
+//		ID_TheLoai = id_TheLoai;
+//		TenTheLoai = tenTheLoai;
+//	}
+	
+	public String getID_TheLoai() {
+		return ID_TheLoai;
+	}
+	public void setID_TheLoai(String iD_TheLoai) {
+		ID_TheLoai = iD_TheLoai;
+	}
+	public String getTenTheLoai() {
+		return TenTheLoai;
+	}
+	public void setTenTheLoai(String tenTheLoai) {
+		TenTheLoai = tenTheLoai;
+	}
+	@Override
+	public String toString() {
+		return "TheLoai [ID_TheLoai=" + ID_TheLoai + ", TenTheLoai=" + TenTheLoai + "]";
+	}
 
-    public TheLoai() {
-    }
+	
 
-    public TheLoai(String ID_Theloai, String TenTheLoai) {
-        this.ID_Theloai = ID_Theloai;
-        this.TenTheLoai = TenTheLoai;
-    }
-
-    public String getID_Theloai() {
-        return ID_Theloai;
-    }
-
-    public void setID_Theloai(String ID_Theloai) {
-        this.ID_Theloai = ID_Theloai;
-    }
-
-    public String getTenTheLoai() {
-        return TenTheLoai;
-    }
-
-    public void setTenTheLoai(String TenTheLoai) {
-        this.TenTheLoai = TenTheLoai;
-    }
-
-    @Override
-    public String toString() {
-        return "TheLoai{" + "ID_Theloai=" + ID_Theloai + ", TenTheLoai=" + TenTheLoai + '}';
-    }
-    
+	
+	
 }
