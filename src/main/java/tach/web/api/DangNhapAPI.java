@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -34,6 +35,8 @@ private static final long serialVersionUID = 1L;
 		resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
 		if(u!=null && BCrypt.checkpw(acc.getPassword(), u.getPassword())) {
+			Cookie cookie=new Cookie("token",Token.generateToken(u));
+			resp.addCookie(cookie);
 			resp.getWriter().write(gson.toJson(
 					new LoginResponse(Token.generateToken(u), u.getUsername(), u.getRole())));
 		}

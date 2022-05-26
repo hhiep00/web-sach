@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+
+<div class="input-group mb-3">
+
+
+<div class="input-group">
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="dat09">
+  <div class="input-group-append">
+    <span class="input-group-text">$</span>
+    <span class="input-group-text">0.00</span>
+  </div>
+</div>
+
+	<table class="table table-dark" >
+ <thead>
+    				    <tr>
+    				      <th scope="col">#</th>
+    				      <th scope="col">Tên Sách</th>
+    				      <th scope="col">Tác giả</th>
+    				      <th scope="col">Số Trang</th>
+    				    </tr>
+</thead >
+  <tbody id="truyen">
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    	$.ajax({
+    		type:"GET",
+    		url:"http://localhost:8080/WebSach/api/sach/",
+    		contentType:"application/json",
+    		success : function(data){
+    			console.log(data);
+    			
+    			let elements=``;
+    			for(let i=0;i<data.length;i++){
+    				
+    				elements+=` 
+    			
+    				    <tr>
+    				      <th scope="row">${i+1}</th>
+    				      <td>${data[i].TenSach}</td>
+    				      <td>${data[i].TacGia}</td>
+    				      <td>${data[i].SoTrang}</td>
+    				    </tr>
+    				    <tr>
+    				`
+    			}
+    			document.getElementById("truyen").innerHTML=elements;
+    		}
+    	})
+    	
+    	$("#dat09").on("keyup",function(){
+    		$.ajax({
+        		type:"GET",
+        		url:"http://localhost:8080/WebSach/api/sach/",
+        		contentType:"application/json",
+        		success : function(data){
+        			let keyword=$("#dat09").val();
+        			data=data.filter( o => o.TenSach.toLowerCase().includes(keyword))
+        			console.log(data);
+        			let elements=``;
+        			for(let i=0;i<data.length;i++){
+        				
+        				elements+=` 
+        			
+        				    <tr>
+        				      <th scope="row">${i+1}</th>
+        				      <td>${data[i].TenSach}</td>
+        				      <td>${data[i].TacGia}</td>
+        				      <td>${data[i].SoTrang}</td>
+        				    </tr>
+        				    <tr>
+        				`
+        			}
+        			document.getElementById("truyen").innerHTML=elements;
+        		}
+        	})
+    	})
+    	
+    </script>
+</body>
+</html>
