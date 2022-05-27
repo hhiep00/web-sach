@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="static/css/header.css">
-    <link rel="stylesheet" href="static/css/body.css">
-    <link rel="stylesheet" href="static/css/footer.css">
-    <title>Trang chủ</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/header.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/body.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/footer.css">
+    <title>Document</title>
 </head>
 
 <body >
@@ -101,86 +102,12 @@
     <div class="noi-dung">
         <div class="can-giua">
             <div class="noi-dung-chinh">
-                <section class="mo-dau">
-                    <div class="gioi-thieu">
-                        <div class="gioi-thieu1">
-                            <div class="tile ">
-                                <a href="doctruyen.html">
-                                    <div class="nhan_truyen">
-                                        <img class="cover" src="http://i.truyenvua.com/slider/290x191/slider_1560493497.jpg?r=r8645456" alt="cover">
-                                        <div class="bottom-shadow"></div>
-                                        <div class="captions">
-                                            <h3>Black Clover</h3>
-                                        </div>
-                                        <div class="chapter red">Chương 327</div>
-                                    </div>
-                                    <!-- /.nhan_truyen -->
-                                </a>
-                            </div>
-                            <div class="tile ">
-                                <a href="doctruyen.html">
-                                    <div class="nhan_truyen">
-                                        <img class="cover" src="http://i.truyenvua.com/slider/290x191/slider_1560493497.jpg?r=r8645456" alt="cover">
-                                        <div class="bottom-shadow"></div>
-                                        <div class="captions">
-                                            <h3>Black Clover</h3>
-                                        </div>
-                                        <div class="chapter red">Chương 327</div>
-                                    </div>
-                                    <!-- /.nhan_truyen -->
-                                </a>
-                            </div>
-                        </div>
-                        <div class="gioi-thieu2">
-                            <div class="tile ">
-                                <a href="doctruyen.html">
-                                    <div class="nhan_truyen">
-                                        <img class="cover" src="http://i.truyenvua.com/slider/290x191/slider_1560493497.jpg?r=r8645456" alt="cover">
-                                        <div class="bottom-shadow"></div>
-                                        <div class="captions">
-                                            <h3>Black Clover</h3>
-                                            <h4>Black Clover</h4>
-                                        </div>
-                                        <div class="chapter red">Chương 327</div>
-                                    </div>
-                                    <!-- /.nhan_truyen -->
-                                </a>
-                            </div>
-                    </div>
-                        <div class="gioi-thieu1">
-                            <div class="tile ">
-                                <a href="doctruyen.html">
-                                    <div class="nhan_truyen">
-                                        <img class="cover" src="http://i.truyenvua.com/slider/290x191/slider_1560493497.jpg?r=r8645456" alt="cover">
-                                        <div class="bottom-shadow"></div>
-                                        <div class="captions">
-                                            <h3>Black Clover</h3>
-                                        </div>
-                                        <div class="chapter red">Chương 327</div>
-                                    </div>
-                                    <!-- /.nhan_truyen -->
-                                </a>
-                            </div>
-                        <div class="tile ">
-                                <a href="doctruyen.html">
-                                    <div class="nhan_truyen">
-                                        <img class="cover" src="http://i.truyenvua.com/slider/290x191/slider_1560493497.jpg?r=r8645456" alt="cover">
-                                        <div class="bottom-shadow"></div>
-                                        <div class="captions">
-                                            <h3>Black Clover</h3>
-                                        </div>
-                                        <div class="chapter red">Chương 327</div>
-                                    </div>
-                                    <!-- /.nhan_truyen -->
-                                </a>
-                            </div>   
-                </div>
-                </section>
+
 
                 <div class="show-sach">
                     <h2>Sách mới cập nhật</h2>
                     <div class="danh-sach-sach">
-                <ul class="chua-sach" id="chua-sach">
+                <ul class="chua-sach" id="list_new">
                 <li>
                     <div class="anh_sach">
                     <a href="motatruyen.html"><img class="center" src="http://i.truyenvua.com/ebook/190x247/om-khan-tieu-ma-giap-cua-toi_1644148715.jpg?r=r8645456" alt="Ôm Khẩn Tiểu Mã Giáp Của Tôi" style=""></a>
@@ -270,9 +197,7 @@
                     </div>
                 </div>
             </div>
-            <div class="load-truyen">
-                    <button class="xem-them-truyen">Xem thêm nhiều truyện</button>
-            </div>
+
         </div>
     </div>
 
@@ -308,7 +233,7 @@
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="static/js/index.js"></script>
-    <script src="static/js/trangchu.js"></script>
+    <script src="${pageContext.request.contextPath}/static/js/index.js"></script>
+    
 </body>
 </html>

@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="static/css/header.css">
-    <link rel="stylesheet" href="static/css/dangky.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/header.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/dangky.css">
     <title>Đăng Ký</title>
 </head>
 
@@ -129,6 +130,7 @@
             </div>
         </div>
     </section>
-    <script src="static/js/Dang_Ky.js"></script>
+
+    <script src="${pageContext.request.contextPath}/static/js/Dang_Ky.js"></script>
 </body>
 </html>

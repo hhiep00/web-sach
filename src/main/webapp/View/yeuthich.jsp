@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="static/css/header.css">
-    <link rel="stylesheet" href="static/css/body.css">
-    <link rel="stylesheet" href="static/css/footer.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/header.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/body.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/footer.css">
     <title>Document</title>
 </head>
 
@@ -101,7 +102,8 @@
     <div class="noi-dung">
         <div class="can-giua">
             <div class="noi-dung-chinh">
-
+    
+                
 
                 <div class="show-sach">
                     <h2>Sách mới cập nhật</h2>
@@ -232,7 +234,7 @@
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="static/js/index.js"></script>
+    <script src="${pageContext.request.contextPath}/static/js/index.js"></script>
     
 </body>
 </html>

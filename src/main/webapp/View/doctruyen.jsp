@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="static/css/header.css">
-    <link rel="stylesheet" href="static/css/footer.css">
-    <link rel="stylesheet" href="static/css/doctruyen.css">
+  
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/header.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/footer.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/doctruyen.css" />
     <title>Document</title>
 </head>
 
@@ -353,7 +355,7 @@
         </div>
     </footer>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="static/js/index.js"></script>
-    <script src="static/js/doctruyen.js"></script>
+     <script src="${pageContext.request.contextPath}/static/js/index.js"></script>
+    <script src="${pageContext.request.contextPath}/static/js/doctruyen.js"></script>
 </body>
 </html>

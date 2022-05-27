@@ -1,6 +1,6 @@
 $.ajax({
     type:"GET",
-    url:"http://localhost:8080/WebSach/api/sach/",
+    url:"http://localhost:8080/WebDocSach/api/sach/",
     contentType:"application/json",
 
     success : function(data){
